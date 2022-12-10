@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <script src="background.js"></script>
+</head>
+<body id="bg-body" style="background-color: rgb(196, 109, 181)">
+    <div style="margin: auto; width: 30%; margin-top: 250px; padding: 60px; background-color: rgb(83, 204, 144); border-radius: 50px; text-align: center;">
+        <form method="POST" action="register.php">
+            <h1 style="font-family: sans-serif">Register an account</h1><br>
+            <label>Username:</label>
+            <input type="text" name="user" id="user" required/><br>
+            <label>Password:</label>
+            <input type="password" name="pass" id="pass" required/><br>
+            <label>Background: </label>
+            <select name="bg" id="bg" value="" onchange="changeBG(this.value)">
+                <option value=""></option>
+                <option value="1">Grass</option>
+                <option value="2">Beach</option>
+                <option value="3">Sun-Down</option>
+                <option value="4">Stars</option>
+                <option value="5">Forest</option>
+            </select></br>
+            <input type="submit" " name="submit" id="submit"/><br>
+        </form>
+    </div> 
+    <div style="margin: auto; width: 30%; padding: 60px; background-color: rgb(83, 204, 144); border-radius: 50px; text-align: center; margin-top: 20px;">
+        <form method="POST" action="login.php">
+            <h1 style="font-family: sans-serif">Login to an account</h1><br>
+            <label>Username:</label>
+            <input type="text" name="user" id="user" required/><br>
+            <label>Password:</label>
+            <input type="password" name="pass" id="pass" required/><br>
+            <input type="submit" " name="submit" id="submit"/><br>
+        </form>
+    </div>
+
+</body>
+</html>
